@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TrustInfo desenvolvimento web</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+</head>
+<body>
+    
+ <header class="trustinfo-header">
+     <h1 class="trustinfo-logomarca">
+         <img src="image/Logo.png" alt="Logo trustinfo" title="Logo trustinfo">
+     </h1>
+     <input id="menu-hamburguer" type="checkbox">
+     <label for="menu-hamburguer">
+       <div class="trustinfo-menu">
+          <span class="trustinfo-menu-hamburguer"></span>
+       </div>
+    </label>
+        <ul>
+            <li><a href="index.html" data-text="Home">Home</a></li>
+            <li><a href="sobre.html" data-text="Empresa">Empresa</a></li>
+            <li><a href="portfolio.html" data-text="Portfólio">Portfólio</a></li>
+            <li><a href="cliente.html" data-text="Clientes">Clientes</a></li>
+            <li><a href="servico.html" data-text="Serviços">Serviços</a></li>
+            <li><a href="produto.html" data-text="Produtos">Produtos</a></li>
+            <li><a href="contato.html" data-text="Contato">Contato</a></li>
+       </ul>
+ </header>
+ <div class="trustinfo-block"></div>
+ <div class="trustinfo-container-contato">
+     <form class="trustinfo-form-contato" action="">
+         <input type="text" name="nome" placeholder="Seu nome" required>
+         <br>
+         <input type="email" name="email" placeholder="Seu e-mail" required>
+         <br>
+         <input type="number" name="telefone" placeholder="Seu telefone" required>
+         <br>
+         <input type="text" name="assunto" placeholder="Assunto" required>
+         <br>
+         <textarea name="mensagem" rows="5" placeholder="Mensagem" required></textarea>
+         <br>
+         <input type="checkbox" value="true" name="copia" id="trustinfo-check"> <p>Quero receber uma cópia desta mensagem</p>
+         
+         <button type="submit" name="btn-form" class="trustinfo-btn1">Enviar</button>
+     </form>
+</div>
+<div id="map"></div>
+<div class="trustinfo-container-local">
+    <address class="trustinfo-box">
+            <div class="trustinfo-icon">
+                <i class="fas fa-map-marker-alt"></i>
+                <h4>Endereço</h4>
+                <h3>Estrada União e Indústria, 11833 / sl.08 / bl.01 - Shopping Altair Itaipava 
+                    Petrópolis / RJ - CEP: 25730-740 </h3>
+            </div>
+            <div class="trustinfo-icon">
+                <i class="fas fa-phone"></i>
+                <h4>Telefone</h4>
+                <h3>(24) 2222-4299</h3>
+           </div>
+        <div class="trustinfo-icon">
+                <i class="fas fa-envelope"></i>
+                <h4>E-mail</h4>
+                <h3>contato@trustinfo.com.br</h3>
+        </div>
+   </address>
+</div>    
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBWRbRSAtLPd7TlQR19M1WzbazWMY4zCpc&callback=initMap"
+    async defer></script>
+ <script src="js/main.js"></script>   
+</body>
+</html>
